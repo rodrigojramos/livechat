@@ -15,5 +15,4 @@ public class LiveChatController {
     public ChatOutput newMessage(ChatInput input) {
         return new ChatOutput(HtmlUtils.htmlEscape(input.user() + ": " + input.message()));
     }
-
 }
